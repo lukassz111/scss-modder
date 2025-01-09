@@ -1,7 +1,7 @@
 {
   "name": "scss-modder",
   "version": "1.0.0",
-  "bin": "./dist/main.bundle.js",
+  "bin": "node ./dist/main.bundle.js",
   "scripts": {
     "build": "npx webpack",
     "test": "npx webpack && node ./dist/test.bundle.js",
