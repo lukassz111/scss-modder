@@ -35,6 +35,7 @@
                 "line-height",
                 "direction",
                 "word-break",
+                "vertical-align",
                 "text-align",
                 "text-decoration",
                 "text-decoration-style",
