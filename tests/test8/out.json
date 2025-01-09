@@ -1,0 +1,455 @@
+{
+  "child": [
+    {
+      "name": ".tul-recruitment-layout-kierunek ",
+      "child": [
+        {
+          "name": "transition",
+          "value": " 300ms",
+          "elementType": "Rule"
+        },
+        {
+          "name": ">* ",
+          "child": [
+            {
+              "name": "transition",
+              "value": " 300ms",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": ".tul-recruitment-layout-region-image ",
+          "child": [
+            {
+              "name": "position",
+              "value": " relative",
+              "elementType": "Rule"
+            },
+            {
+              "name": "z-index",
+              "value": " 0",
+              "elementType": "Rule"
+            },
+            {
+              "name": "&~* ",
+              "child": [
+                {
+                  "name": "z-index",
+                  "value": " 1",
+                  "elementType": "Rule"
+                },
+                {
+                  "name": "position",
+                  "value": " relative",
+                  "elementType": "Rule"
+                }
+              ],
+              "elementType": "Block"
+            },
+            {
+              "name": "picture ",
+              "child": [
+                {
+                  "name": "width",
+                  "value": " fit-content",
+                  "elementType": "Rule"
+                },
+                {
+                  "name": "height",
+                  "value": " fit-content",
+                  "elementType": "Rule"
+                },
+                {
+                  "name": "display",
+                  "value": " block",
+                  "elementType": "Rule"
+                },
+                {
+                  "name": "max-width",
+                  "value": " 100%",
+                  "elementType": "Rule"
+                },
+                {
+                  "name": "margin",
+                  "value": " 0 auto",
+                  "elementType": "Rule"
+                },
+                {
+                  "name": ">img ",
+                  "child": [
+                    {
+                      "name": "margin",
+                      "value": " 0 auto",
+                      "elementType": "Rule"
+                    },
+                    {
+                      "name": "position",
+                      "value": " absolute",
+                      "elementType": "Rule"
+                    },
+                    {
+                      "name": "left",
+                      "value": " 0",
+                      "elementType": "Rule"
+                    },
+                    {
+                      "name": "right",
+                      "value": " 0",
+                      "elementType": "Rule"
+                    }
+                  ],
+                  "elementType": "Block"
+                }
+              ],
+              "elementType": "Block"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": ".tul-recruitment-layout-region-card ",
+          "child": [
+            {
+              "name": "background",
+              "value": " var(--tul_recruitment-white)",
+              "elementType": "Rule"
+            },
+            {
+              "name": "border-color",
+              "value": " var(--tul-recruitment-beige-dark)",
+              "elementType": "Rule"
+            },
+            {
+              "name": ".field--name-field-studyfield-program ",
+              "child": [
+                {
+                  "name": ">a ",
+                  "child": [
+                    {
+                      "name": "background-color",
+                      "value": " var(--tul_recruitment-orange)",
+                      "elementType": "Rule"
+                    },
+                    {
+                      "name": "border-color",
+                      "value": " var(--tul_recruitment-orange)",
+                      "elementType": "Rule"
+                    },
+                    {
+                      "name": "cursor",
+                      "value": " pointer",
+                      "elementType": "Rule"
+                    },
+                    {
+                      "name": "color",
+                      "value": " var(--tul_recruitment-text-on-bg-orange)",
+                      "elementType": "Rule"
+                    }
+                  ],
+                  "elementType": "Block"
+                }
+              ],
+              "elementType": "Block"
+            },
+            {
+              "name": "-webkit-box-shadow",
+              "value": " 8px 8px 24px 0px var(--tul-recruitment-box-shadow)",
+              "elementType": "Rule"
+            },
+            {
+              "name": "-moz-box-shadow",
+              "value": " 8px 8px 24px 0px var(--tul-recruitment-box-shadow)",
+              "elementType": "Rule"
+            },
+            {
+              "name": "box-shadow",
+              "value": " 8px 8px 24px 0px var(--tul-recruitment-box-shadow)",
+              "elementType": "Rule"
+            },
+            {
+              "name": ".field--name-field-matriculation-subjects>.field__items>.field__item,\n      .field--name-field__matriculation-subjects-op>.field__items>.field__item ",
+              "child": [
+                {
+                  "name": "word-break",
+                  "value": " keep-all",
+                  "elementType": "Rule"
+                }
+              ],
+              "elementType": "Block"
+            },
+            {
+              "name": ".field--name-field-study-mode,\n      .field--name-field-professional-certificate ",
+              "child": [
+                {
+                  "name": ">.field__items>.field__item ",
+                  "child": [
+                    {
+                      "name": "direction",
+                      "value": " block",
+                      "elementType": "Rule"
+                    }
+                  ],
+                  "elementType": "Block"
+                }
+              ],
+              "elementType": "Block"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "text": "start .tul-recruitment-layout-region-tag",
+          "elementType": "OneLineComment"
+        },
+        {
+          "name": ".tul-recruitment-layout-region-tag>.tul-recruitment-layout-region-tag-inner>div>.block ",
+          "child": [
+            {
+              "name": "background",
+              "value": " var(--tul-recruitment-beige-light)",
+              "elementType": "Rule"
+            },
+            {
+              "name": "border-color",
+              "value": " var(--tul-recruitment-beige-dark)",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": ".tul-recruitment-layout-region-tag>.tul-recruitment-layout-region-tag-inner>div>.block>.content>.field,\n    .tul-recruitment-layout-region-tag>.tul-recruitment-layout-region-tag-inner>div>.block>.content>.field>.field__label ",
+          "child": [
+            {
+              "name": "word-break",
+              "value": " keep-all",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "text": "end .tul-recruitment-layout-region-tag",
+          "elementType": "OneLineComment"
+        },
+        {
+          "name": ".tul-recruitment-layout-region-sticky-body ",
+          "child": [
+            {
+              "name": "background-color",
+              "value": " var(--tul-recruitment-beige-light)",
+              "elementType": "Rule"
+            },
+            {
+              "name": "-webkit-box-shadow",
+              "value": " 0px 8px 4px 4px var(--tul-recruitment-beige-light)",
+              "elementType": "Rule"
+            },
+            {
+              "name": "-moz-box-shadow",
+              "value": " 0px 8px 4px 4px var(--tul-recruitment-beige-light)",
+              "elementType": "Rule"
+            },
+            {
+              "name": "box-shadow",
+              "value": " 0px 8px 4px 4px var(--tul-recruitment-beige-light)",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "--content-max-width",
+          "value": " min(750px, 100vw)",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "text": "* Widok opinie *",
+      "elementType": "MultiLineComment"
+    },
+    {
+      "text": "\n  Przydatne linki na stronie rekrutacji.p.lodz.pl\n",
+      "elementType": "MultiLineComment"
+    },
+    {
+      "text": "\n  Przydatne linki na stronie apply.p.lodz.pl\n",
+      "elementType": "MultiLineComment"
+    },
+    {
+      "text": "Bez dyplomów info",
+      "elementType": "OneLineComment"
+    },
+    {
+      "text": " Przycisk ulubione ",
+      "elementType": "MultiLineComment"
+    },
+    {
+      "text": " Przycisk ulubione ",
+      "elementType": "MultiLineComment"
+    },
+    {
+      "name": ".taxonomy-term[data-bundle=\"studyfield\"] .tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card .field--name-name.field__item>button ",
+      "child": [
+        {
+          "name": "border-color",
+          "value": " var(--tul-recruitment-blue-medium)",
+          "elementType": "Rule"
+        },
+        {
+          "name": "background-color",
+          "value": " transparent",
+          "elementType": "Rule"
+        },
+        {
+          "name": ">.label ",
+          "child": [
+            {
+              "name": "visibility",
+              "value": " hidden",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".taxonomy-term[data-bundle=\"studyfield\"] .tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card .field--name-name.field__item>button>.icon ",
+      "child": [
+        {
+          "name": "background-image",
+          "value": " var(--tul-svg-banner)",
+          "elementType": "Rule"
+        },
+        {
+          "name": "background-color",
+          "value": " transparent",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".taxonomy-term[data-bundle=\"studyfield\"] .tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card .field--name-name.field__item>button.checked>.icon ",
+      "child": [
+        {
+          "name": "background-image",
+          "value": " var(--tul-svg-banner-filled)",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".not-touchscreen .taxonomy-term[data-bundle=\"studyfield\"] .tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card .field--name-name.field__item>button:hover>.icon ",
+      "child": [
+        {
+          "name": "background-image",
+          "value": " var(--tul-svg-banner-filled)",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".not-touchscreen .taxonomy-term[data-bundle=\"studyfield\"] .tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card .field--name-name.field__item>button.checked:hover>.icon ",
+      "child": [
+        {
+          "name": "background-image",
+          "value": " var(--tul-svg-banner)",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": "@media(max-width: 1300px) ",
+      "child": [
+        {
+          "name": ".tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card ",
+          "child": [
+            {
+              "name": "-webkit-box-shadow",
+              "value": " none",
+              "elementType": "Rule"
+            },
+            {
+              "name": "-moz-box-shadow",
+              "value": " none",
+              "elementType": "Rule"
+            },
+            {
+              "name": "box-shadow",
+              "value": " none",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": ".tul-recruitment-layout-kierunek .tul-recruitment-layout-region-sticky-body ",
+          "child": [
+            {
+              "name": "background-color",
+              "value": " transparent",
+              "elementType": "Rule"
+            },
+            {
+              "name": "-webkit-box-shadow",
+              "value": " none",
+              "elementType": "Rule"
+            },
+            {
+              "name": "-moz-box-shadow",
+              "value": " none",
+              "elementType": "Rule"
+            },
+            {
+              "name": "box-shadow",
+              "value": " none",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": "@media (max-width: 800px) ",
+      "child": [
+        {
+          "name": ".tul-recruitment-layout-kierunek ",
+          "child": [
+            {
+              "name": ".tul-recruitment-layout-region-card ",
+              "child": [
+                {
+                  "name": ">.block-field-blocktaxonomy-termstudyfieldfield-studyfield-program ",
+                  "child": [
+                    {
+                      "name": "order",
+                      "value": " 1",
+                      "elementType": "Rule"
+                    }
+                  ],
+                  "elementType": "Block"
+                }
+              ],
+              "elementType": "Block"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    }
+  ],
+  "elementType": "Default"
+}

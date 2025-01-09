@@ -1,0 +1,34 @@
+{
+  "child": [
+    {
+      "name": ".example-class ",
+      "child": [
+        {
+          "name": "background-color",
+          "value": " red",
+          "elementType": "Rule"
+        },
+        {
+          "name": "color",
+          "value": " red",
+          "elementType": "Rule"
+        },
+        {
+          "text": " asdasd\r\n    .example-class {\r\n        background-color: blue;\r\n    }\r\n    ",
+          "elementType": "MultiLineComment"
+        },
+        {
+          "text": " Commment\r",
+          "elementType": "OneLineComment"
+        },
+        {
+          "name": "color",
+          "value": " blue",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    }
+  ],
+  "elementType": "Default"
+}

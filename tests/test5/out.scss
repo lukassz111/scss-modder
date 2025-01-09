@@ -1,0 +1,60 @@
+//  Zmienne
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: "Roboto", sans-serif;
+$base-spacing: 1rem;
+//  Mixiny
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin button-style($bg-color, $text-color) {
+	background-color: $bg-color;
+	color: $text-color;
+	padding: $base-spacing;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+//  Funkcja
+@function calculate-rem($px-value) {
+	@return $px-value / 16 * 1rem;
+}
+//  Podstawowe style
+body {
+	font-family: $font-stack;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+	color: #333;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: $base-spacing;
+	//  Zagnieżdżone style
+	h1 {
+		font-size: calculate-rem(32px);
+		color: $primary-color;
+	}
+	p {
+		line-height: 1.6;
+		margin-bottom: $base-spacing;
+	}
+}
+//  Przyciski
+.button {
+	@include button-style($primary-color, #fff);
+	&--secondary {
+		@include button-style($secondary-color, #fff);
+	}
+}
+//  Flexbox utility
+.flex-center {
+	@include flex-center;
+	height: 100vh;
+	background-color: $primary-color;
+	color: #fff;
+	font-size: calculate-rem(20px);
+}

@@ -1,0 +1,1172 @@
+{
+  "child": [
+    {
+      "name": "@import '../../scss_includes/defaults'",
+      "elementType": "Rule"
+    },
+    {
+      "name": ".text-formatted ",
+      "child": [
+        {
+          "name": "font-weight",
+          "value": " 400",
+          "elementType": "Rule"
+        },
+        {
+          "name": "letter-spacing",
+          "value": " 0",
+          "elementType": "Rule"
+        },
+        {
+          "name": "iframe ",
+          "child": [
+            {
+              "name": "max-width",
+              "value": " 100%",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "text": " * Text formatted ",
+      "elementType": "MultiLineComment"
+    },
+    {
+      "name": ".text-formatted blockquote ",
+      "child": [
+        {
+          "name": "background-image",
+          "value": " var(--tul-svg-quote-border)",
+          "elementType": "Rule"
+        },
+        {
+          "name": "background-repeat",
+          "value": " no-repeat",
+          "elementType": "Rule"
+        },
+        {
+          "name": "background-position",
+          "value": " 0% 50%",
+          "elementType": "Rule"
+        },
+        {
+          "name": "background-size",
+          "value": " 2.5rem",
+          "elementType": "Rule"
+        },
+        {
+          "name": "padding-left",
+          "value": " 5rem",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": "div.tul-text-mod-inline ",
+      "child": [
+        {
+          "name": "display",
+          "value": " flex",
+          "elementType": "Rule"
+        },
+        {
+          "name": "align-items",
+          "value": " center",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": "@media (max-width: 1439.98px) ",
+      "child": [
+        {
+          "name": "div.tul-text-mod-max-width-1440px ",
+          "child": [],
+          "elementType": "Block"
+        },
+        {
+          "name": "div.tul-text-mod-min-width-1440px ",
+          "child": [
+            {
+              "name": "display",
+              "value": " none",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": "@media (min-width: 1440px) ",
+      "child": [
+        {
+          "name": "div.tul-text-mod-max-width-1440px ",
+          "child": [
+            {
+              "name": "display",
+              "value": " none",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": ".text-formatted .tul-text-mod-min-width-1440px ",
+          "child": [
+            {
+              "name": ".row > * ",
+              "child": [
+                {
+                  "name": "padding-right",
+                  "value": " calc(var(--bs-gutter-x)) !important",
+                  "elementType": "Rule"
+                },
+                {
+                  "name": "padding-left",
+                  "value": " calc(var(--bs-gutter-x)) !important",
+                  "elementType": "Rule"
+                }
+              ],
+              "elementType": "Block"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted>.align-center ",
+      "child": [
+        {
+          "name": "display",
+          "value": " flex",
+          "elementType": "Rule"
+        },
+        {
+          "name": "width",
+          "value": " 100%",
+          "elementType": "Rule"
+        },
+        {
+          "name": "justify-content",
+          "value": " center",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted>.align-center>.field--type-image ",
+      "child": [
+        {
+          "name": "margin",
+          "value": " 0 0 !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "float",
+          "value": " unset !important",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted>.tul-recruitment-view-mode-rounded-corners .field--type-image,\r\n.text-formatted>.tul-recruitment-view-mode-rounded-corners .field--type-image>.field__item,\r\n.text-formatted>.tul-recruitment-view-mode-rounded-corners .field--type-image>.field__item>img ",
+      "child": [
+        {
+          "text": " width: min(480px, 100%); ",
+          "elementType": "MultiLineComment"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted>.tul-recruitment-view-mode-rounded-corners .field--type-image>.field__item>img ",
+      "child": [
+        {
+          "name": "border-width",
+          "value": " 0",
+          "elementType": "Rule"
+        },
+        {
+          "name": "border-radius",
+          "value": " 0.56rem",
+          "elementType": "Rule"
+        },
+        {
+          "name": "border-style",
+          "value": " solid",
+          "elementType": "Rule"
+        },
+        {
+          "name": "border-color",
+          "value": " transparent",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted p,\r\n.text-formatted span ",
+      "child": [
+        {
+          "name": "line-height",
+          "value": " normal",
+          "elementType": "Rule"
+        },
+        {
+          "name": "word-wrap",
+          "value": " break-word",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": "@media (min-width: 720px) ",
+      "child": [
+        {
+          "name": ".text-formatted p,\r\n  .text-formatted span ",
+          "child": [
+            {
+              "name": "word-wrap",
+              "value": " normal",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted,\r\n.text-formatted>.field__item ",
+      "child": [
+        {
+          "name": ">tr th ",
+          "child": [
+            {
+              "name": "border",
+              "value": " 1px solid #B7B3B3",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "table td>p ",
+          "child": [
+            {
+              "name": "margin-bottom",
+              "value": " 0",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "table td>p+p ",
+          "child": [
+            {
+              "name": "margin-top",
+              "value": " 1rem",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted table ",
+      "child": [
+        {
+          "name": "font-size",
+          "value": " 1rem !important",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "text": " List\r",
+      "elementType": "OneLineComment"
+    },
+    {
+      "name": ".text-formatted,\r\n.text-formatted>.field__item,\r\n.text-formatted table td ",
+      "child": [
+        {
+          "name": "p+ul,\r\n  p+ol ",
+          "child": [
+            {
+              "name": "margin-top",
+              "value": " 1rem",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "ul ",
+          "child": [
+            {
+              "name": "list-style",
+              "value": " none",
+              "elementType": "Rule"
+            },
+            {
+              "name": "line-height",
+              "value": " initial",
+              "elementType": "Rule"
+            },
+            {
+              "name": ">li>* ",
+              "child": [
+                {
+                  "name": "line-height",
+                  "value": " initial",
+                  "elementType": "Rule"
+                }
+              ],
+              "elementType": "Block"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "ul>li ",
+          "child": [
+            {
+              "name": "margin-left",
+              "value": " 1.125rem",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": ">ul>li ",
+          "child": [
+            {
+              "name": "margin-left",
+              "value": " calc(3ch + 1.125rem)",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "ul>li+li,\r\n  ol>li+li ",
+          "child": [
+            {
+              "name": "margin-top",
+              "value": " 1rem",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "ul>li::before ",
+          "child": [
+            {
+              "name": "position",
+              "value": " relative",
+              "elementType": "Rule"
+            },
+            {
+              "name": "top",
+              "value": " -0.3rem",
+              "elementType": "Rule"
+            },
+            {
+              "name": "width",
+              "value": " 3ch",
+              "elementType": "Rule"
+            },
+            {
+              "name": "display",
+              "value": " inline-block",
+              "elementType": "Rule"
+            },
+            {
+              "name": "aspect-ratio",
+              "value": " 1/1",
+              "elementType": "Rule"
+            },
+            {
+              "name": "content",
+              "value": " '    '",
+              "elementType": "Rule"
+            },
+            {
+              "name": "background-image",
+              "value": " var(--tul-svg-ul-item-arrow-icon)",
+              "elementType": "Rule"
+            },
+            {
+              "name": "white-space",
+              "value": " pre-wrap",
+              "elementType": "Rule"
+            },
+            {
+              "name": "background-repeat",
+              "value": " no-repeat",
+              "elementType": "Rule"
+            },
+            {
+              "name": "background-size",
+              "value": " contain",
+              "elementType": "Rule"
+            },
+            {
+              "name": "background-position",
+              "value": " center",
+              "elementType": "Rule"
+            },
+            {
+              "text": " margin-right: 1.125rem;\r",
+              "elementType": "OneLineComment"
+            },
+            {
+              "name": "margin-left",
+              "value": " -4ch",
+              "elementType": "Rule"
+            },
+            {
+              "name": "margin-bottom",
+              "value": " -1ch",
+              "elementType": "Rule"
+            },
+            {
+              "name": "left",
+              "value": " -1.125rem",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": ">ul>li::before ",
+          "child": [
+            {
+              "name": "margin-left",
+              "value": " -3ch",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "ul>li>* ",
+          "child": [
+            {
+              "name": "margin-left",
+              "value": " 3ch",
+              "elementType": "Rule"
+            },
+            {
+              "name": "line-height",
+              "value": " 1.2rem",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "ul>li>*:first-of-type ",
+          "child": [
+            {
+              "name": "margin-left",
+              "value": " 0",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "ul>li>br ",
+          "child": [
+            {
+              "name": "display",
+              "value": " none",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "ul>li>br+* ",
+          "child": [
+            {
+              "name": "display",
+              "value": " block",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "ol>li::marker ",
+          "child": [
+            {
+              "name": "font-size",
+              "value": " 1rem",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "ol,\r\n  ul ",
+          "child": [
+            {
+              "name": ">li>ul ",
+              "child": [
+                {
+                  "name": "margin-top",
+                  "value": " 1ch",
+                  "elementType": "Rule"
+                }
+              ],
+              "elementType": "Block"
+            },
+            {
+              "name": "ul>li::before ",
+              "child": [
+                {
+                  "name": "margin-left",
+                  "value": " calc(-3ch)",
+                  "elementType": "Rule"
+                }
+              ],
+              "elementType": "Block"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "text": " End List\r",
+      "elementType": "OneLineComment"
+    },
+    {
+      "name": ".text-formatted>.align-center.tul-recruitment-media-bundle-remote-video,\r\n.text-formatted>.align-center.tul-recruitment-media-bundle-remote-video>.field,\r\n.text-formatted>.align-center.tul-recruitment-media-bundle-remote-video>.field>.field__item ",
+      "child": [
+        {
+          "name": "height",
+          "value": " auto",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted>.align-center.tul-recruitment-media-bundle-remote-video.tul-recruitment-view-mode-text-full-width,\r\n.text-formatted>.align-center.tul-recruitment-media-bundle-remote-video.tul-recruitment-view-mode-text-full-width>.field,\r\n.text-formatted>.align-center.tul-recruitment-media-bundle-remote-video.tul-recruitment-view-mode-text-full-width>.field>.field__item ",
+      "child": [
+        {
+          "name": "width",
+          "value": " 100%",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted>.align-center.tul-recruitment-media-bundle-remote-video>.field>.field__item>iframe ",
+      "child": [
+        {
+          "name": "width",
+          "value": " 100%",
+          "elementType": "Rule"
+        },
+        {
+          "name": "aspect-ratio",
+          "value": " 854/480",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-media-bundle-remote-video>.field--name-field-media-oembed-video > .field__item > iframe  ",
+      "child": [
+        {
+          "name": "aspect-ratio",
+          "value": " 854/480",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-view-mode-screen-full-width>.field>.field__item ",
+      "child": [
+        {
+          "name": "width",
+          "value": " 100vw",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-view-mode-screen-full-width>.field>.field__item>img ",
+      "child": [
+        {
+          "name": "width",
+          "value": " 100%",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-view-mode-text-full-width>.field>.field__item ",
+      "child": [
+        {
+          "name": "width",
+          "value": " 100%",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-view-mode-text-full-width>.field>.field__item>img ",
+      "child": [
+        {
+          "name": "width",
+          "value": " 100%",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .field--type-image ",
+      "child": [
+        {
+          "name": "margin",
+          "value": " 0 1em",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted ",
+      "child": [
+        {
+          "name": "--text-width",
+          "value": " 700px",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-view-mode-text-colorbox-1-2,\r\n.text-formatted .tul-recruitment-view-mode-text-1-2 ",
+      "child": [
+        {
+          "name": "max-width",
+          "value": " calc(var(--text-width) / 2)",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-view-mode-text-colorbox-1-3,\r\n.text-formatted .tul-recruitment-view-mode-text-1-3 ",
+      "child": [
+        {
+          "name": "max-width",
+          "value": " calc(var(--text-width) / 3)",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-view-mode-text-colorbox-2-3,\r\n.text-formatted .tul-recruitment-view-mode-text-2-3 ",
+      "child": [
+        {
+          "name": "max-width",
+          "value": " calc(var(--text-width) / 0.666)",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-view-mode-text-colorbox-1-4,\r\n.text-formatted .tul-recruitment-view-mode-text-1-4 ",
+      "child": [
+        {
+          "name": "max-width",
+          "value": " calc(var(--text-width) / 4)",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-view-mode-text-colorbox-3-4,\r\n.text-formatted .tul-recruitment-view-mode-text-3-4 ",
+      "child": [
+        {
+          "name": "max-width",
+          "value": " calc(var(--text-width) * 0.75)",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-view-mode-w200 ",
+      "child": [
+        {
+          "name": "width",
+          "value": " 200px",
+          "elementType": "Rule"
+        },
+        {
+          "name": "max-width",
+          "value": " 200px",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted figcaption ",
+      "child": [
+        {
+          "name": "margin",
+          "value": " 0 1em",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted figure>figcaption ",
+      "child": [
+        {
+          "name": "display",
+          "value": " none",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .tul-recruitment-media-bundle-image img ",
+      "child": [
+        {
+          "name": "margin-bottom",
+          "value": " 2rem",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted figure.caption ",
+      "child": [
+        {
+          "name": "margin-bottom",
+          "value": " 0",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted a ",
+      "child": [
+        {
+          "name": "@include default_link",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .title-page ",
+      "child": [
+        {
+          "name": "display",
+          "value": " block",
+          "elementType": "Rule"
+        },
+        {
+          "name": "font-size",
+          "value": " 2.75rem",
+          "elementType": "Rule"
+        },
+        {
+          "name": "font-weight",
+          "value": " 700",
+          "elementType": "Rule"
+        },
+        {
+          "name": "letter-spacing",
+          "value": " 0.06ch",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .title-page ",
+      "child": [
+        {
+          "name": "--scale",
+          "value": " 1.0",
+          "elementType": "Rule"
+        },
+        {
+          "name": "--invertScale",
+          "value": " calc( 2.0 - var(--scale) )",
+          "elementType": "Rule"
+        },
+        {
+          "name": "--width",
+          "value": " calc( 100% * var(--invertScale) )",
+          "elementType": "Rule"
+        },
+        {
+          "name": "width",
+          "value": " var(--width)",
+          "elementType": "Rule"
+        },
+        {
+          "name": "scale",
+          "value": " var(--scale)",
+          "elementType": "Rule"
+        },
+        {
+          "name": "position",
+          "value": " relative",
+          "elementType": "Rule"
+        },
+        {
+          "name": "left",
+          "value": " calc( calc( 100% - var(--width) ) / 2 )",
+          "elementType": "Rule"
+        },
+        {
+          "name": "word-wrap",
+          "value": " break-word",
+          "elementType": "Rule"
+        },
+        {
+          "name": "word-break",
+          "value": " break-word",
+          "elementType": "Rule"
+        },
+        {
+          "name": "font-size-adjust",
+          "value": " ch-width 0.5",
+          "elementType": "Rule"
+        },
+        {
+          "name": "font-optical-sizing",
+          "value": " auto",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted > h1.title-page ",
+      "child": [
+        {
+          "name": "text-align",
+          "value": " center !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "margin-top",
+          "value": " 2rem !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "margin-bottom",
+          "value": " 2rem !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "font-size",
+          "value": " calc(1.875rem + 1.5vw) !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "font-weight",
+          "value": " 600 !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "letter-spacing",
+          "value": " unset",
+          "elementType": "Rule"
+        },
+        {
+          "name": "font-size-adjust",
+          "value": " none",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .title-page span,\r\n.text-formatted .title-page p ",
+      "child": [
+        {
+          "name": "word-wrap",
+          "value": " inherit !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "word-break",
+          "value": " inherit !important",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".tul-text-mod-table-scroll-wrap ",
+      "child": [
+        {
+          "name": "overflow-x",
+          "value": " auto",
+          "elementType": "Rule"
+        },
+        {
+          "name": "width",
+          "value": " fit-content",
+          "elementType": "Rule"
+        },
+        {
+          "name": "max-width",
+          "value": " 100%",
+          "elementType": "Rule"
+        },
+        {
+          "name": "margin",
+          "value": " 0 auto",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": "@media(min-width: 1000px) ",
+      "child": [
+        {
+          "name": ".node--type-page > .node__content > .text-formatted,\r\n  .paragraph--type--text > .text-formatted ",
+          "child": [
+            {
+              "name": "> .tul-text-mod-table-scroll-wrap ",
+              "child": [
+                {
+                  "name": "--width",
+                  "value": " 150%",
+                  "elementType": "Rule"
+                },
+                {
+                  "name": "max-width",
+                  "value": " var(--width)",
+                  "elementType": "Rule"
+                },
+                {
+                  "name": "width",
+                  "value": " var(--width)",
+                  "elementType": "Rule"
+                },
+                {
+                  "name": "margin",
+                  "value": " 0 -25% 0 -25%",
+                  "elementType": "Rule"
+                },
+                {
+                  "name": "> table ",
+                  "child": [
+                    {
+                      "name": "margin",
+                      "value": " 0 auto",
+                      "elementType": "Rule"
+                    }
+                  ],
+                  "elementType": "Block"
+                }
+              ],
+              "elementType": "Block"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".tul-text-mod-decoration-1 ",
+      "child": [
+        {
+          "name": "background-image",
+          "value": " var(--tul-svg-deco-icon-3)",
+          "elementType": "Rule"
+        },
+        {
+          "name": "background-origin",
+          "value": " padding-box",
+          "elementType": "Rule"
+        },
+        {
+          "name": "background-size",
+          "value": " contain",
+          "elementType": "Rule"
+        },
+        {
+          "name": "background-repeat",
+          "value": " no-repeat",
+          "elementType": "Rule"
+        },
+        {
+          "name": "background-position",
+          "value": " 70% center",
+          "elementType": "Rule"
+        },
+        {
+          "name": "padding-top",
+          "value": " 2rem",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".tul-text-mod-table-scroll-wrap>table ",
+      "child": [
+        {
+          "name": "width",
+          "value": " fit-content",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted table>thead>tr>th>p ",
+      "child": [
+        {
+          "name": "margin-bottom",
+          "value": " 0",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted table>thead>tr>th>p+* ",
+      "child": [
+        {
+          "name": "margin-top",
+          "value": " 1rem",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".text-formatted .summary-divider ",
+      "child": [
+        {
+          "name": "display",
+          "value": " none",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": "div.tul-text-mod-table-scroll-wrap+p",
+      "child": [
+        {
+          "text": "font-size: 0.857em;\r",
+          "elementType": "OneLineComment"
+        },
+        {
+          "name": "line-height",
+          "value": " unset",
+          "elementType": "Rule"
+        },
+        {
+          "text": "  color: red;\r",
+          "elementType": "OneLineComment"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "text": "table.auto-fix\r",
+      "elementType": "OneLineComment"
+    },
+    {
+      "name": "table.auto-fix ",
+      "child": [
+        {
+          "name": "max-width",
+          "value": " 100% !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "width",
+          "value": " auto !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "height",
+          "value": " auto !important",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": "table.auto-fix td,\r\ntable.auto-fix th",
+      "child": [
+        {
+          "name": "width",
+          "value": " auto !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "height",
+          "value": " auto !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "text-wrap",
+          "value": " wrap !important",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    }
+  ],
+  "elementType": "Default"
+}

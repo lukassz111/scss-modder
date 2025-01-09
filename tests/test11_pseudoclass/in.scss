@@ -1,0 +1,17 @@
+
+
+@media (min-width: 1440px) {
+    #main-wrapper {
+        min-width: 1440px;
+    }
+
+    /* #main-wrapper > #main { */
+    :root {
+        /* // --id-main-wrapper-width: 97.22vw; */
+        --id-main-wrapper-width: 92.22vw;
+        /* // --id-main-wrapper-margin: 1.39vw; */
+        --id-main-wrapper-margin: 3.89vw;
+        /* --id-main-wrapper-margin-double: calc(100vw - var(--id-main-wrapper-width));
+      --id-main-wrapper-margin: calc( var(--id-main-wrapper-margin-double) / 2 ); */
+    }
+}

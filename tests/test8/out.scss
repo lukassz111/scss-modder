@@ -1,0 +1,121 @@
+.tul-recruitment-layout-kierunek {
+	transition: 300ms;
+	>* {
+		transition: 300ms;
+	}
+	.tul-recruitment-layout-region-image {
+		position: relative;
+		z-index: 0;
+		&~* {
+			z-index: 1;
+			position: relative;
+		}
+		picture {
+			width: fit-content;
+			height: fit-content;
+			display: block;
+			max-width: 100%;
+			margin: 0 auto;
+			>img {
+				margin: 0 auto;
+				position: absolute;
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+	.tul-recruitment-layout-region-card {
+		background: var(--tul_recruitment-white);
+		border-color: var(--tul-recruitment-beige-dark);
+		.field--name-field-studyfield-program {
+			>a {
+				background-color: var(--tul_recruitment-orange);
+				border-color: var(--tul_recruitment-orange);
+				cursor: pointer;
+				color: var(--tul_recruitment-text-on-bg-orange);
+			}
+		}
+		-webkit-box-shadow: 8px 8px 24px 0px var(--tul-recruitment-box-shadow);
+		-moz-box-shadow: 8px 8px 24px 0px var(--tul-recruitment-box-shadow);
+		box-shadow: 8px 8px 24px 0px var(--tul-recruitment-box-shadow);
+		.field--name-field-matriculation-subjects>.field__items>.field__item,
+      .field--name-field__matriculation-subjects-op>.field__items>.field__item {
+			word-break: keep-all;
+		}
+		.field--name-field-study-mode,
+      .field--name-field-professional-certificate {
+			>.field__items>.field__item {
+				direction: block;
+			}
+		}
+	}
+	// start .tul-recruitment-layout-region-tag
+	.tul-recruitment-layout-region-tag>.tul-recruitment-layout-region-tag-inner>div>.block {
+		background: var(--tul-recruitment-beige-light);
+		border-color: var(--tul-recruitment-beige-dark);
+	}
+	.tul-recruitment-layout-region-tag>.tul-recruitment-layout-region-tag-inner>div>.block>.content>.field,
+    .tul-recruitment-layout-region-tag>.tul-recruitment-layout-region-tag-inner>div>.block>.content>.field>.field__label {
+		word-break: keep-all;
+	}
+	// end .tul-recruitment-layout-region-tag
+	.tul-recruitment-layout-region-sticky-body {
+		background-color: var(--tul-recruitment-beige-light);
+		-webkit-box-shadow: 0px 8px 4px 4px var(--tul-recruitment-beige-light);
+		-moz-box-shadow: 0px 8px 4px 4px var(--tul-recruitment-beige-light);
+		box-shadow: 0px 8px 4px 4px var(--tul-recruitment-beige-light);
+	}
+	--content-max-width: min(750px, 100vw);
+}
+/* * Widok opinie * */
+/* 
+  Przydatne linki na stronie rekrutacji.p.lodz.pl
+ */
+/* 
+  Przydatne linki na stronie apply.p.lodz.pl
+ */
+// Bez dyplomów info
+/*  Przycisk ulubione  */
+/*  Przycisk ulubione  */
+.taxonomy-term[data-bundle="studyfield"] .tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card .field--name-name.field__item>button {
+	border-color: var(--tul-recruitment-blue-medium);
+	background-color: transparent;
+	>.label {
+		visibility: hidden;
+	}
+}
+.taxonomy-term[data-bundle="studyfield"] .tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card .field--name-name.field__item>button>.icon {
+	background-image: var(--tul-svg-banner);
+	background-color: transparent;
+}
+.taxonomy-term[data-bundle="studyfield"] .tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card .field--name-name.field__item>button.checked>.icon {
+	background-image: var(--tul-svg-banner-filled);
+}
+.not-touchscreen .taxonomy-term[data-bundle="studyfield"] .tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card .field--name-name.field__item>button:hover>.icon {
+	background-image: var(--tul-svg-banner-filled);
+}
+.not-touchscreen .taxonomy-term[data-bundle="studyfield"] .tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card .field--name-name.field__item>button.checked:hover>.icon {
+	background-image: var(--tul-svg-banner);
+}
+@media(max-width: 1300px) {
+	.tul-recruitment-layout-kierunek .tul-recruitment-layout-region-card {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	.tul-recruitment-layout-kierunek .tul-recruitment-layout-region-sticky-body {
+		background-color: transparent;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}
+@media (max-width: 800px) {
+	.tul-recruitment-layout-kierunek {
+		.tul-recruitment-layout-region-card {
+			>.block-field-blocktaxonomy-termstudyfieldfield-studyfield-program {
+				order: 1;
+			}
+		}
+	}
+}

@@ -1,0 +1,276 @@
+{
+  "child": [
+    {
+      "text": " Zmienne\r",
+      "elementType": "OneLineComment"
+    },
+    {
+      "name": "$primary-color",
+      "value": " #3498db",
+      "elementType": "Rule"
+    },
+    {
+      "name": "$secondary-color",
+      "value": " #2ecc71",
+      "elementType": "Rule"
+    },
+    {
+      "name": "$font-stack",
+      "value": " \"Roboto\", sans-serif",
+      "elementType": "Rule"
+    },
+    {
+      "name": "$base-spacing",
+      "value": " 1rem",
+      "elementType": "Rule"
+    },
+    {
+      "text": " Mixiny\r",
+      "elementType": "OneLineComment"
+    },
+    {
+      "name": "@mixin flex-center ",
+      "child": [
+        {
+          "name": "display",
+          "value": " flex",
+          "elementType": "Rule"
+        },
+        {
+          "name": "justify-content",
+          "value": " center",
+          "elementType": "Rule"
+        },
+        {
+          "name": "align-items",
+          "value": " center",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": "@mixin button-style($bg-color, $text-color) ",
+      "child": [
+        {
+          "name": "background-color",
+          "value": " $bg-color",
+          "elementType": "Rule"
+        },
+        {
+          "name": "color",
+          "value": " $text-color",
+          "elementType": "Rule"
+        },
+        {
+          "name": "padding",
+          "value": " $base-spacing",
+          "elementType": "Rule"
+        },
+        {
+          "name": "border",
+          "value": " none",
+          "elementType": "Rule"
+        },
+        {
+          "name": "border-radius",
+          "value": " 5px",
+          "elementType": "Rule"
+        },
+        {
+          "name": "cursor",
+          "value": " pointer",
+          "elementType": "Rule"
+        },
+        {
+          "name": ".x ",
+          "child": [
+            {
+              "name": "color",
+              "value": " red",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "&:hover ",
+          "child": [
+            {
+              "name": "background-color",
+              "value": " darken($bg-color, 10%)",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "text": " Funkcja\r",
+      "elementType": "OneLineComment"
+    },
+    {
+      "name": "@function calculate-rem($px-value) ",
+      "child": [
+        {
+          "name": "@return $px-value / 16 * 1rem",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "text": " Podstawowe style\r",
+      "elementType": "OneLineComment"
+    },
+    {
+      "name": "body ",
+      "child": [
+        {
+          "name": "font-family",
+          "value": " $font-stack",
+          "elementType": "Rule"
+        },
+        {
+          "name": "margin",
+          "value": " 0",
+          "elementType": "Rule"
+        },
+        {
+          "name": "padding",
+          "value": " 0",
+          "elementType": "Rule"
+        },
+        {
+          "name": "background-color",
+          "value": " #f4f4f4",
+          "elementType": "Rule"
+        },
+        {
+          "name": "color",
+          "value": " #333",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".container ",
+      "child": [
+        {
+          "name": "max-width",
+          "value": " 1200px",
+          "elementType": "Rule"
+        },
+        {
+          "name": "margin",
+          "value": " 0 auto",
+          "elementType": "Rule"
+        },
+        {
+          "name": "padding",
+          "value": " $base-spacing",
+          "elementType": "Rule"
+        },
+        {
+          "text": " Zagnieżdżone style\r",
+          "elementType": "OneLineComment"
+        },
+        {
+          "name": "h1 ",
+          "child": [
+            {
+              "name": "font-size",
+              "value": " calculate-rem(32px)",
+              "elementType": "Rule"
+            },
+            {
+              "name": "color",
+              "value": " $primary-color",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "p ",
+          "child": [
+            {
+              "name": "line-height",
+              "value": " 1.6",
+              "elementType": "Rule"
+            },
+            {
+              "name": "margin-bottom",
+              "value": " $base-spacing",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "text": " Przyciski\r",
+      "elementType": "OneLineComment"
+    },
+    {
+      "name": ".button ",
+      "child": [
+        {
+          "name": "@include button-style($primary-color, #fff)",
+          "elementType": "Rule"
+        },
+        {
+          "name": "&--secondary ",
+          "child": [
+            {
+              "name": "@include button-style($secondary-color, #fff)",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "text": " Flexbox utility\r",
+      "elementType": "OneLineComment"
+    },
+    {
+      "name": ".flex-center ",
+      "child": [
+        {
+          "name": "@include flex-center",
+          "elementType": "Rule"
+        },
+        {
+          "name": "height",
+          "value": " 100vh",
+          "elementType": "Rule"
+        },
+        {
+          "name": "background-color",
+          "value": " $primary-color",
+          "elementType": "Rule"
+        },
+        {
+          "name": "color",
+          "value": " #fff",
+          "elementType": "Rule"
+        },
+        {
+          "name": "font-size",
+          "value": " calculate-rem(20px)",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    }
+  ],
+  "elementType": "Default"
+}

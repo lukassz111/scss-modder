@@ -1,0 +1,16 @@
+@mixin test-mixin($var, $var2) {
+	--var-a: #{$var};
+	--var-b: #{$var2};
+}
+.example-class {
+	background-color: red;
+	color: red;
+	@include test-mixin(123, 123);
+	/*  asdasd
+    .example-class {
+        background-color: blue;
+    }
+     */
+	//  Commment
+	color: blue;
+}

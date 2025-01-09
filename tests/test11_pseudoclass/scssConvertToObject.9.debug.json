@@ -1,0 +1,54 @@
+{
+  "child": [
+    {
+      "name": "@media (min-width: 1440px) ",
+      "child": [
+        {
+          "name": "#main-wrapper ",
+          "child": [
+            {
+              "name": "min-width",
+              "value": " 1440px",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "text": " #main-wrapper > #main { ",
+          "elementType": "MultiLineComment"
+        },
+        {
+          "name": ":root ",
+          "child": [
+            {
+              "text": " // --id-main-wrapper-width: 97.22vw; ",
+              "elementType": "MultiLineComment"
+            },
+            {
+              "name": "--id-main-wrapper-width",
+              "value": " 92.22vw",
+              "elementType": "Rule"
+            },
+            {
+              "text": " // --id-main-wrapper-margin: 1.39vw; ",
+              "elementType": "MultiLineComment"
+            },
+            {
+              "name": "--id-main-wrapper-margin",
+              "value": " 3.89vw",
+              "elementType": "Rule"
+            },
+            {
+              "text": " --id-main-wrapper-margin-double: calc(100vw - var(--id-main-wrapper-width));\r\n      --id-main-wrapper-margin: calc( var(--id-main-wrapper-margin-double) / 2 ); ",
+              "elementType": "MultiLineComment"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    }
+  ],
+  "elementType": "Default"
+}

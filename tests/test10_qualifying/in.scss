@@ -1,0 +1,39 @@
+@import '../../../scss_includes/defaults';
+.view-qualifying-subjects table {
+    font-size: 1rem !important;
+    p {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    a {
+        @include default_link;
+    }
+    >thead {
+
+        >tr {
+            >th {
+                background-color: var(--tul-recruitment-beige-dark) !important;
+                color: #0F202C !important;
+                border-bottom-style: none;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    >tbody {
+        >tr {
+            &:nth-child(2n+1) {
+                background: none !important;
+            }
+
+            &:nth-child(2n) {
+                background: #FFFFFF !important;
+            }
+            > td {
+                border: 1px solid #B7B3B3 !important;
+                vertical-align: middle;
+            }
+        }
+    }
+
+}

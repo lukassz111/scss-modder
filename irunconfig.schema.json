@@ -1,0 +1,198 @@
+{
+  "$ref": "#/definitions/IRunConfig",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "IRunConfig": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/IRunConfigMultipleFiles"
+        },
+        {
+          "$ref": "#/definitions/IRunConfigOneFile"
+        }
+      ]
+    },
+    "IRunConfigCommand": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/IRunConfigCommand_RemoveRuleByName"
+        },
+        {
+          "$ref": "#/definitions/IRunConfigCommand_RemoveEmptyBlocks"
+        },
+        {
+          "$ref": "#/definitions/IRunConfigCommand_RemoveEmptyComments"
+        },
+        {
+          "$ref": "#/definitions/IRunConfigCommand_ChangeOneLineCommentsToMultiline"
+        },
+        {
+          "$ref": "#/definitions/IRunConfigCommand_RemoveCssVar"
+        },
+        {
+          "$ref": "#/definitions/IRunConfigCommand_CommentsContentTrim"
+        }
+      ]
+    },
+    "IRunConfigCommandType": {
+      "enum": [
+        "RemoveRuleByName",
+        "RemoveEmptyBlocks",
+        "RemoveEmptyComments",
+        "ChangeOneLineCommentsToMultiline",
+        "RemoveCssVar",
+        "CommentsContentTrim"
+      ],
+      "type": "string"
+    },
+    "IRunConfigCommand_ChangeOneLineCommentsToMultiline": {
+      "additionalProperties": false,
+      "properties": {
+        "commandType": {
+          "$ref": "#/definitions/IRunConfigCommandType"
+        },
+        "runCommandOnContentOfComment": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "commandType"
+      ],
+      "type": "object"
+    },
+    "IRunConfigCommand_CommentsContentTrim": {
+      "additionalProperties": false,
+      "properties": {
+        "commandType": {
+          "$ref": "#/definitions/IRunConfigCommandType"
+        },
+        "runCommandOnContentOfComment": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "commandType"
+      ],
+      "type": "object"
+    },
+    "IRunConfigCommand_RemoveCssVar": {
+      "additionalProperties": false,
+      "properties": {
+        "commandType": {
+          "$ref": "#/definitions/IRunConfigCommandType"
+        },
+        "runCommandOnContentOfComment": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "commandType"
+      ],
+      "type": "object"
+    },
+    "IRunConfigCommand_RemoveEmptyBlocks": {
+      "additionalProperties": false,
+      "properties": {
+        "blockWithOnlyCommentsTreatAsEmpty": {
+          "type": "boolean"
+        },
+        "commandType": {
+          "$ref": "#/definitions/IRunConfigCommandType"
+        },
+        "runCommandOnContentOfComment": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "commandType"
+      ],
+      "type": "object"
+    },
+    "IRunConfigCommand_RemoveEmptyComments": {
+      "additionalProperties": false,
+      "properties": {
+        "commandType": {
+          "$ref": "#/definitions/IRunConfigCommandType"
+        },
+        "runCommandOnContentOfComment": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "commandType"
+      ],
+      "type": "object"
+    },
+    "IRunConfigCommand_RemoveRuleByName": {
+      "additionalProperties": false,
+      "properties": {
+        "commandType": {
+          "$ref": "#/definitions/IRunConfigCommandType"
+        },
+        "ruleName": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "runCommandOnContentOfComment": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "commandType",
+        "ruleName"
+      ],
+      "type": "object"
+    },
+    "IRunConfigMultipleFiles": {
+      "additionalProperties": false,
+      "properties": {
+        "commands": {
+          "items": {
+            "$ref": "#/definitions/IRunConfigCommand"
+          },
+          "type": "array"
+        },
+        "excludePathFilesRegex": {
+          "type": "string"
+        },
+        "outputDir": {
+          "type": "string"
+        },
+        "startDir": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "commands",
+        "outputDir",
+        "startDir"
+      ],
+      "type": "object"
+    },
+    "IRunConfigOneFile": {
+      "additionalProperties": false,
+      "properties": {
+        "commands": {
+          "items": {
+            "$ref": "#/definitions/IRunConfigCommand"
+          },
+          "type": "array"
+        },
+        "outFile": {
+          "type": "string"
+        },
+        "startFile": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "commands",
+        "outFile",
+        "startFile"
+      ],
+      "type": "object"
+    }
+  }
+}

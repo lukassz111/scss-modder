@@ -1,0 +1,134 @@
+{
+  "child": [
+    {
+      "name": "@import '../../../scss_includes/defaults'",
+      "elementType": "Rule"
+    },
+    {
+      "name": ".view-qualifying-subjects table ",
+      "child": [
+        {
+          "name": "font-size",
+          "value": " 1rem !important",
+          "elementType": "Rule"
+        },
+        {
+          "name": "p ",
+          "child": [
+            {
+              "name": "margin-top",
+              "value": " 0 !important",
+              "elementType": "Rule"
+            },
+            {
+              "name": "margin-bottom",
+              "value": " 0 !important",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": "a ",
+          "child": [
+            {
+              "name": "@include default_link",
+              "elementType": "Rule"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": ">thead ",
+          "child": [
+            {
+              "name": ">tr ",
+              "child": [
+                {
+                  "name": ">th ",
+                  "child": [
+                    {
+                      "name": "background-color",
+                      "value": " var(--tul-recruitment-beige-dark) !important",
+                      "elementType": "Rule"
+                    },
+                    {
+                      "name": "color",
+                      "value": " #0F202C !important",
+                      "elementType": "Rule"
+                    },
+                    {
+                      "name": "border-bottom-style",
+                      "value": " none",
+                      "elementType": "Rule"
+                    },
+                    {
+                      "name": "vertical-align",
+                      "value": " middle",
+                      "elementType": "Rule"
+                    }
+                  ],
+                  "elementType": "Block"
+                }
+              ],
+              "elementType": "Block"
+            }
+          ],
+          "elementType": "Block"
+        },
+        {
+          "name": ">tbody ",
+          "child": [
+            {
+              "name": ">tr ",
+              "child": [
+                {
+                  "name": "&:nth-child(2n+1) ",
+                  "child": [
+                    {
+                      "name": "background",
+                      "value": " none !important",
+                      "elementType": "Rule"
+                    }
+                  ],
+                  "elementType": "Block"
+                },
+                {
+                  "name": "&:nth-child(2n) ",
+                  "child": [
+                    {
+                      "name": "background",
+                      "value": " #FFFFFF !important",
+                      "elementType": "Rule"
+                    }
+                  ],
+                  "elementType": "Block"
+                },
+                {
+                  "name": "> td ",
+                  "child": [
+                    {
+                      "name": "border",
+                      "value": " 1px solid #B7B3B3 !important",
+                      "elementType": "Rule"
+                    },
+                    {
+                      "name": "vertical-align",
+                      "value": " middle",
+                      "elementType": "Rule"
+                    }
+                  ],
+                  "elementType": "Block"
+                }
+              ],
+              "elementType": "Block"
+            }
+          ],
+          "elementType": "Block"
+        }
+      ],
+      "elementType": "Block"
+    }
+  ],
+  "elementType": "Default"
+}

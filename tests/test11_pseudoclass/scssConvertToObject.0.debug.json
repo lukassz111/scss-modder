@@ -1,0 +1,11 @@
+{
+  "child": [
+    {
+      "name": "@media (min-width: 1440px) ",
+      "child": [],
+      "elementType": "Block",
+      "content": "\r\n    #main-wrapper {\r\n        min-width: 1440px;\r\n    }\r\n\r\n    /* #main-wrapper > #main { */\r\n    :root {\r\n        /* // --id-main-wrapper-width: 97.22vw; */\r\n        --id-main-wrapper-width: 92.22vw;\r\n        /* // --id-main-wrapper-margin: 1.39vw; */\r\n        --id-main-wrapper-margin: 3.89vw;\r\n        /* --id-main-wrapper-margin-double: calc(100vw - var(--id-main-wrapper-width));\r\n      --id-main-wrapper-margin: calc( var(--id-main-wrapper-margin-double) / 2 ); */\r\n    }\r\n"
+    }
+  ],
+  "elementType": "Default"
+}

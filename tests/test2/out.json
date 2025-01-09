@@ -1,0 +1,51 @@
+{
+  "child": [
+    {
+      "name": ".example-class ",
+      "child": [
+        {
+          "name": "background-color",
+          "value": " red",
+          "elementType": "Rule"
+        },
+        {
+          "name": "color",
+          "value": " red",
+          "elementType": "Rule"
+        },
+        {
+          "name": "content",
+          "value": " \"asdasd\"",
+          "elementType": "Rule"
+        },
+        {
+          "text": " asdasd\r\n    .example-class {\r\n        background-color: blue;\r\n    }\r\n    ",
+          "elementType": "MultiLineComment"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".asd>.example-class-2,\r\n.example-class-3 ",
+      "child": [
+        {
+          "name": "background-color",
+          "value": " red",
+          "elementType": "Rule"
+        },
+        {
+          "name": "color",
+          "value": " red",
+          "elementType": "Rule"
+        },
+        {
+          "name": "content",
+          "value": " \"asdasd\"",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    }
+  ],
+  "elementType": "Default"
+}

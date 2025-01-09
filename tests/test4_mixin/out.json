@@ -1,0 +1,54 @@
+{
+  "child": [
+    {
+      "name": "@mixin test-mixin($var, $var2) ",
+      "child": [
+        {
+          "name": "--var-a",
+          "value": " #{$var}",
+          "elementType": "Rule"
+        },
+        {
+          "name": "--var-b",
+          "value": " #{$var2}",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    },
+    {
+      "name": ".example-class ",
+      "child": [
+        {
+          "name": "background-color",
+          "value": " red",
+          "elementType": "Rule"
+        },
+        {
+          "name": "color",
+          "value": " red",
+          "elementType": "Rule"
+        },
+        {
+          "name": "@include test-mixin(123, 123)",
+          "elementType": "Rule"
+        },
+        {
+          "text": " asdasd\r\n    .example-class {\r\n        background-color: blue;\r\n    }\r\n    ",
+          "elementType": "MultiLineComment"
+        },
+        {
+          "text": " Commment\r",
+          "elementType": "OneLineComment"
+        },
+        {
+          "name": "color",
+          "value": " blue",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    }
+  ],
+  "elementType": "Default"
+}

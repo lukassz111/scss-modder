@@ -1,0 +1,16 @@
+{
+  "child": [
+    {
+      "name": ".x ",
+      "child": [
+        {
+          "name": "border-color",
+          "value": " red",
+          "elementType": "Rule"
+        }
+      ],
+      "elementType": "Block"
+    }
+  ],
+  "elementType": "Default"
+}

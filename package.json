@@ -1,0 +1,26 @@
+{
+  "name": "scss-modder",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx webpack",
+    "test": "npx webpack && node ./dist/test.bundle.js",
+    "main": "npx webpack && node ./dist/main.bundle.js",
+    "generate-schema-run-config": "npx cash-pwd && npx ts-json-schema-generator -p './src/lib/model/IRunConfig.ts' -t 'IRunConfig'"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "gulp": "^5.0.0",
+    "gulp-copy": "^5.0.0",
+    "sass": "^1.83.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "scss-modder": "file:"
+  }
+}
